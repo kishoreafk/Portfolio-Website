@@ -1,15 +1,22 @@
 [
   {
-    "name": "OBJECT IDENTIFICATION USING DEEP LEARNING ",
-    "desc": "Developed a convolutional neural network (CNN) model to identify and classify multiple objects in real-time from video streams. ",
-    "image": "#",
-    "category": "#"
+    "name": "Object Detection Using CNN",
+    "image": "odcnn",
+    "desc": "Detects objects using Convolutional Neural Networks.",
+    "category": "odcnn",
+    "links": {
+      "view": "#",
+      "code": "#"
+    }
   },
-  
   {
-    "name": "HANDWRITTEN DIGIT RECOGNISATION (MNIST)",
-    "desc": "Implemented a deep learning model using CNN to classify handwritten digits from the MNIST dataset. ",
-    "image": "#",
-    "category": "#"
+    "name": "Handwritten Digit Recognition",
+    "image": "digit",
+    "desc": "Recognizes handwritten digits using ML.",
+    "category": "digit",
+    "links": {
+      "view": "#",
+      "code": "#"
+    }
   }
 ]
