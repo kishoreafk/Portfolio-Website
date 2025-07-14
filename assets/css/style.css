@@ -515,7 +515,7 @@ header .navbar ul li a:hover {
   font-family: "Poppins";
   margin-left: 0.5rem;
 }
-.skills img {
+.skillsContainer img {
   width: 50px;     /* Set desired size */
   height: 50px;
   object-fit: contain;
