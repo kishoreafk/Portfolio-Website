@@ -88,10 +88,10 @@ function showProjects(projects) {
         layoutMode: 'fitRows',
         masonry: {
             columnWidth: 200
-        }
+    }
     });
 
-    // filter items on button click
+    // then add the click handler here:
     $('.button-group').on('click', 'button', function () {
         $('.button-group').find('.is-checked').removeClass('is-checked');
         $(this).addClass('is-checked');

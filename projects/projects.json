@@ -5,7 +5,7 @@
     "desc": "Detects objects using Convolutional Neural Networks.",
     "category": "odcnn",
     "links": {
-      "view": "#",
+      "view": "../#about",
       "code": "#"
     }
   },
@@ -15,7 +15,7 @@
     "desc": "Recognizes handwritten digits using ML.",
     "category": "digit",
     "links": {
-      "view": "#",
+      "view": "../#about",
       "code": "#"
     }
   }
