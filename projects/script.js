@@ -87,7 +87,8 @@ function showProjects(projects) {
         itemSelector: '.grid-item',
         layoutMode: 'fitRows',
         masonry: {
-            columnWidth: 200
+            columnWidth: '.grid-sizer',  // use a sizing element
+            gutter: 10 // optional spacing between items
     }
     });
 
