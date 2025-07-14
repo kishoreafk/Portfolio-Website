@@ -92,10 +92,15 @@ function showProjects(projects) {
 
     // then add the click handler here:
     $('.button-group').on('click', 'button', function () {
-        $('.button-group').find('.is-checked').removeClass('is-checked');
+        // remove highlight from all buttons
+        $('.button-group .btn').removeClass('is-checked');
+
+        // add highlight to clicked button
         $(this).addClass('is-checked');
+
+        // filter items
         var filterValue = $(this).attr('data-filter');
-        console.log("Filter:", filterValue);
+        console.log('Applying filter:', filterValue);
         $grid.isotope({ filter: filterValue });
     });
 }
