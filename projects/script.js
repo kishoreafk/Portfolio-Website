@@ -39,7 +39,6 @@ function getProjects() {
         });
 }
 
-
 function showProjects(projects) {
     let projectsContainer = document.querySelector(".work .box-container");
     let projectsHTML = "";
@@ -85,11 +84,15 @@ function showProjects(projects) {
     // isotope filter products
     var $grid = $('.box-container').isotope({
         itemSelector: '.grid-item',
-        layoutMode: 'fitRows',
+        layoutMode: 'masonry',
         masonry: {
-            columnWidth: '.grid-sizer',  // use a sizing element
+            columnWidth: 200,  // use a sizing element
             gutter: 10 // optional spacing between items
     }
+    });
+
+    $grid.imagesLoaded().progress( function() {
+        $grid.isotope('layout');
     });
 
     // then add the click handler here:
@@ -103,8 +106,11 @@ function showProjects(projects) {
 }
 
 getProjects().then(data => {
-    showProjects(data);
-})
+  // Filter projects to show only the one you want (e.g., by category or name)
+  const mainPageProject = data.filter(project => project.category === 'portfolio'); // or some unique category
+
+  showProjects(mainPageProject);
+});
 // fetch projects end
 
 // Start of Tawk.to Live Chat
