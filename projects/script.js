@@ -39,28 +39,29 @@ function getProjects() {
         });
 }
 
+
 function showProjects(projects) {
     let projectsContainer = document.querySelector(".work .box-container");
     let projectsHTML = "";
     projects.forEach(project => {
         projectsHTML += `
         <div class="grid-item ${project.category}">
-            <div class="box tilt" style="width: 380px; margin: 1rem">
-                <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
-                <div class="content">
-                    <div class="tag">
-                        <h3>${project.name}</h3>
-                    </div>
-                    <div class="desc">
-                        <p>${project.desc}</p>
-                        <div class="btns">
-                            <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-                            <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>`;
+        <div class="box tilt" style="width: 380px; margin: 1rem">
+      <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
+      <div class="content">
+        <div class="tag">
+        <h3>${project.name}</h3>
+        </div>
+        <div class="desc">
+          <p>${project.desc}</p>
+          <div class="btns">
+            <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+            <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>`
     });
     projectsContainer.innerHTML = projectsHTML;
 
@@ -92,19 +93,17 @@ function showProjects(projects) {
 
     // then add the click handler here:
     $('.button-group').on('click', 'button', function () {
-        // remove highlight from all buttons
-        $('.button-group .btn').removeClass('is-checked');
-
-        // add highlight to clicked button
+        $('.button-group').find('.is-checked').removeClass('is-checked');
         $(this).addClass('is-checked');
-
-        // filter items
         var filterValue = $(this).attr('data-filter');
-        console.log('Applying filter:', filterValue);
+        console.log("Filter:", filterValue);
         $grid.isotope({ filter: filterValue });
-    });
+});
 }
 
+getProjects().then(data => {
+    showProjects(data);
+})
 // fetch projects end
 
 // Start of Tawk.to Live Chat
