@@ -95,14 +95,15 @@ function showSkills(skills) {
     skills.forEach(skill => {
         skillHTML += `
         <div class="bar">
-              <div class="info">
-                <img src=${skill.icon} alt="skill" />
+            <div class="info">
+                <img src="${skill.icon}" alt="${skill.name}" />
                 <span>${skill.name}</span>
-              </div>
-            </div>`
+            </div>
+        </div>`;
     });
     skillsContainer.innerHTML = skillHTML;
 }
+
 
 function showProjects(projects) {
     let projectsContainer = document.querySelector("#work .box-container");
