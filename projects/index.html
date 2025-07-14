@@ -36,12 +36,36 @@
 
   <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
   
-
+  <div id="filters" class="button-group">
+    <button class="btn is-checked" data-filter="*">All Projects</button>
+    <button class="btn" data-filter=".portfolio">Portfolio Website</button>
+    <button class="btn" data-filter=".odcnn">Object Detection Using CNN</button>
+    <button class="btn" data-filter=".digit">Handwritten Digit Recoginisation</button>
+    <!--<button class="btn" data-filter=".lamp">LAMP Stack</button>
+    <button class="btn" data-filter=".basicweb">Basic Web</button>
+    <button class="btn" data-filter=".android">Android App</button>-->
+  </div>
 
   <div class="box-container">
- 
+
+    <div class="box tilt">
+      <img href="/assets/images/projects/odcnn.PNG" alt="" />
+      <div class="content">
+        <div class="tag">
+        <h3>Portfolio Website</h3>
+        </div>
+        <div class="desc">
+          <p>Personal portfolio website. Don't need much info about it, just scroll down. You're here only!</p>
+          <div class="btns">
+            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+            <a href="#" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>  
 
   </div>
+
 
   <div class="backbtn">
     <a href="../#home" class="btn">
@@ -56,14 +80,6 @@
 <!-- scroll top btn -->
 <a href="#work" class="fas fa-angle-up" id="scroll-top"></a>
 <!-- scroll back to top -->
-
-
-<script>
-  $(document).ready(function() {
-    // Call to fetch and show projects, limited or full depending on showProjects function
-    getProjects().then(showProjects);
-  });
-</script>
 
 
 <!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
