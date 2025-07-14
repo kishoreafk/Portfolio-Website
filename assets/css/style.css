@@ -515,6 +515,11 @@ header .navbar ul li a:hover {
   font-family: "Poppins";
   margin-left: 0.5rem;
 }
+.skills img {
+  width: 50px;     /* Set desired size */
+  height: 50px;
+  object-fit: contain;
+}
 /* skills media queries starts*/
 @media screen and (max-width: 600px) {
   .skills .container {
