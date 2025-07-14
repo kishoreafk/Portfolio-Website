@@ -84,10 +84,9 @@ function showProjects(projects) {
     // isotope filter products
     var $grid = $('.box-container').isotope({
         itemSelector: '.grid-item',
-        layoutMode: 'masonry',
+        layoutMode: 'fitRows',
         masonry: {
-            columnWidth: 200,  // use a sizing element
-            gutter: 10 // optional spacing between items
+            columnWidth: 200
     }
     });
 
@@ -104,6 +103,7 @@ function showProjects(projects) {
         $grid.isotope({ filter: filterValue });
     });
 }
+
 // fetch projects end
 
 // Start of Tawk.to Live Chat
