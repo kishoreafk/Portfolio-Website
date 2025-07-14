@@ -1,5 +1,15 @@
 [
   {
+    "name": "Portfolio Website",
+    "category": "portfolio",
+    "image": "portfolio-website",
+    "desc": "Personal portfolio website. Don't need much info about it, just scroll down. You're here only!",
+    "links": {
+      "view": "#",
+      "code": "#"
+    }
+  },
+  {
     "name": "Object Detection Using CNN",
     "image": "odcnn",
     "desc": "Detects objects using Convolutional Neural Networks.",
