@@ -104,13 +104,6 @@ function showProjects(projects) {
         $grid.isotope({ filter: filterValue });
     });
 }
-
-getProjects().then(data => {
-  // Filter projects to show only the one you want (e.g., by category or name)
-  const mainPageProject = data.filter(project => project.category === 'portfolio'); // or some unique category
-
-  showProjects(mainPageProject);
-});
 // fetch projects end
 
 // Start of Tawk.to Live Chat
