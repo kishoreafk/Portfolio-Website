@@ -89,11 +89,7 @@ function showProjects(projects) {
             columnWidth: 200
     }
     });
-
-    $grid.imagesLoaded().progress( function() {
-        $grid.isotope('layout');
-    });
-
+    
     // then add the click handler here:
     $('.button-group').on('click', 'button', function () {
         $('.button-group').find('.is-checked').removeClass('is-checked');
