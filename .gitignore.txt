@@ -1,0 +1,20 @@
+# Ignore system and user-specific files
+.DS_Store
+Thumbs.db
+*.log
+*.bak
+*.swp
+
+# Windows system files
+NTUSER.DAT
+ntuser.ini
+OneDrive/
+AppData/
+Documents/My Music/
+Documents/My Pictures/
+Documents/My Videos/
+Saved Games/
+Searches/
+
+# VSCode settings
+.vscode/
