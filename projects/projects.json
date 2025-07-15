@@ -2,7 +2,7 @@
   {
     "name": "Portfolio Website",
     "category": "portfolio",
-    "image": "/Portfolio-Website/assets/images/projects/portfolio.png",
+    "image": "portfolio",
     "desc": "Personal portfolio website. Don't need much info about it, just scroll down. You're here only!",
     "links": {
       "view": "#",
