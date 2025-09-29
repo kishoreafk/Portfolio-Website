@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Java Certification",
+    "category": "programming",
+    "image": "java_cert",
+    "desc": "NPTEL Course Certification in Java programming.",
+    "issuer": "NPTEL",
+    "date": "Nov 2024",
+    "links": {
+      "view": "#",
+      "code": "#"
+    }
+  },
+  {
+    "name": "Python for Data Science",
+    "category": "data_science",
+    "image": "python_cert",
+    "desc": "Certification in Python fundamentals and data science applications.",
+    "issuer": "Coursera",
+    "date": "Oct 2024",
+    "links": {
+      "view": "#",
+      "code": "#"
+    }
+  },
+  {
+    "name": "Machine Learning Specialization",
+    "category": "ml_ai",
+    "image": "ml_cert",
+    "desc": "Comprehensive machine learning certification covering algorithms and applications.",
+    "issuer": "Coursera/Stanford",
+    "date": "Sep 2024",
+    "links": {
+      "view": "#",
+      "code": "#"
+    }
+  }
+]
